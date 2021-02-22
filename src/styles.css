@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+.form-wrapper {
+  background: url("../../../images/formBck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+.form-login-bck {
+  background: url("../../../images/loginBck.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px;
+}
+
+.form-container {
+  margin: 0 auto;
+  width: 1000px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  opacity: 0.85;
+  border-radius: 10px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: rgba(0, 0, 0, 0.089);
+}
+
+.close-btn {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  font-size: 1.5rem;
+  z-index: 1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-content-left {
+  background: linear-gradient(
+    90deg,
+    rgba(196, 121, 22, 0.489) 0%,
+    rgba(204, 136, 11, 0.441) 100%
+      /*     rgba(17, 68, 25, 0.686) 0%,
+    rgba(17, 102, 28, 0.604) 100% */
+  );
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+
+.form-img {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-img-2 {
+  width: 60%;
+  height: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-success {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 80px;
+  color: #fff;
+}
+
+.form-content-right {
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  background: linear-gradient(90deg, rgb(40, 40, 40) 0%, rgb(17, 17, 17) 100%);
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 80%;
+  color: #fff;
+  font-family: "Bubblegum Sans", cursive;
+  margin-bottom: 1.5rem;
+}
+.form .joinTeamh1 {
+  width: 100%;
+}
+.form .form-storyP {
+  font-size: 1.9rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Shadows Into Light", cursive;
+}
+.form-svg {
+  width: 170px;
+  height: 170px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.traveller {
+  background-image: url(../../../images/tourist.svg);
+}
+.host {
+  background-image: url(../../../images/guide.svg);
+}
+.form-inputs {
+  margin-bottom: 1.3rem;
+  width: 80%;
+}
+
+.form-inputs p {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #f00e0e;
+}
+
+.form-label {
+  display: inline-block;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.form-input {
+  display: block;
+  padding-left: 10px;
+  outline: none;
+  border-radius: 2px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+.form-input::placeholder {
+  color: #595959;
+  font-size: 12px;
+}
+
+.form-input-login {
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+
+.form-input-login a {
+  text-decoration: none;
+  color: #ff6b00;
+  font-weight: 600;
+}
+
+#test5 {
+  background-color: #ff6b00;
+  margin-left: 2rem;
+  margin-top: 0.1rem;
+}
+
+/*FORM TOGGLE*/
+.hideForm {
+  display: none;
+}
+
+/*TOGGLE BUTTON*/
+
+input[type="checkbox"] {
+  display: none;
+}
+
+#button {
+  position: absolute;
+  top: 75%;
+  right: 70%;
+  display: block;
+  width: 291px;
+  height: 125px;
+  background-color: #000;
+  border-radius: 350px;
+  cursor: pointer;
+  transform: scale(0.4);
+  margin: 50px auto;
+}
+
+#knob {
+  width: 112px;
+  height: 104px;
+  background-image: url("../../../bckImages/background.jpeg");
+  background-size: 701px;
+  position: relative;
+  top: 9px;
+  left: 14px;
+  border-radius: 290px;
+  transition: 0.4s ease left, 0.4s ease background-position;
+  z-index: 2;
+}
+
+#subscribe,
+#alright {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 171px;
+  z-index: 1;
+}
+
+#alright {
+  margin-left: 30px;
+}
+
+#lol-checkbox:checked + #button #knob {
+  left: 170px;
+  background-position: -350px 0;
+}
